@@ -1,0 +1,43 @@
+body {
+    background-image: url('../img/albun1.jpg'), url('../img/albun2.jpg'), url('../img/albun3.jpg'), url('../img/albun4.jpg');
+    background-repeat: repeat; /* Faz o padrão se repetir */
+    background-size: 50vw 50vh; /* Define o tamanho de cada imagem */
+    background-position: 
+        0 0,         /* img1 (top-left) */
+        50vw 0,      /* img2 (top-right) */
+        0 50vh,      /* img3 (bottom-left) */
+        50vw 50vh;   /* img4 (bottom-right) */
+    animation: moveBackground 60s linear infinite; /* Animação do movimento */
+}
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('src/img/img1.png'), url('src/img/img2.png'), url('src/img/img3.png'), url('src/img/img4.png');
+    background-repeat: repeat;
+    background-size: 50vw 50vh;
+    background-position: 0 0, 50vw 0, 0 50vh, 50vw 50vh;
+    z-index: -2; /* Mantém no fundo */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Sombra escura por cima */
+    z-index: -1; /* Fica acima do fundo, mas atrás do conteúdo */
+}
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%; /* Faz a imagem se mover na direção da diagonal */
+    }
+}

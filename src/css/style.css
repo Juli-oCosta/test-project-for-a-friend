@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Mantém o layout em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Faz o body ocupar a tela toda */
+    margin: 0;
+}
+
+.title, footer, p{
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 2px 2px 5px #13102A, -2px -2px 5px #13102A, 2px -2px 5px #13102A, -2px 2px 5px #13102A;
+}
+
+.title{
+    padding-top: 2%;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente dentro do espaço */
+    gap: 20px; /* Espaço entre o número e o botão */
+    height: 70%; /* Ocupa 50% da altura da tela */
+    text-align: center;
+}
+
+#resultado {
+    font-size: 50px;
+}
+
+.button{
+    border: solid aliceblue;
+    background-color: #1A2042;
+    color: aliceblue;
+    font-weight: bold;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    text-shadow: 8px 8px 8px #13102A;
+    box-shadow: 5px 5px 5px #1e1a38, -5px -5px 5px #1e1a38, 5px -5px 5px #1e1a38, -5px 5px 5px #1e1a38;
+}
+.button:hover{
+    border: solid rgb(115, 127, 138);
+    background-color: #13102A;
+    color: rgb(145, 162, 177);
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #1e1a38, -3px -3px 3px #1e1a38, 3px -3px 3px #1e1a38, -3px 3px 3px #1e1a38;
+}
+
+footer {
+    margin-top: auto;
+    padding-bottom: 10px;
+}
